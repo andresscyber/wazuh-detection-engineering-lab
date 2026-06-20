@@ -36,7 +36,7 @@ Custom detections were developed and mapped to MITRE ATT&CK techniques to simula
 
 ## Architecture
 
-![Architecture](00-architecture/lab-architecture.png)
+![Architecture](screenshots/00-architecture/lab-architecture.png)
 
 ### Data Flow
 
