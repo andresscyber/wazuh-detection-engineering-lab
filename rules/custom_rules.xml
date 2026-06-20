@@ -1,0 +1,51 @@
+<group name="windows,powershell,detection_engineering,">
+
+  <rule id="100100" level="12">
+    <if_sid>92027</if_sid>
+    <match>secedit</match>
+
+    <description>Detection Engineering Lab - PowerShell Executed SecEdit</description>
+
+    <mitre>
+      <id>T1059.001</id>
+    </mitre>
+
+    <group>
+      attack.execution,
+      powershell,
+      detection_engineering,
+    </group>
+  </rule>
+
+  <rule id="100101" level="12">
+    <if_sid>60109</if_sid>
+
+    <description>Detection Engineering Lab - User Account Created</description>
+
+    <mitre>
+      <id>T1136</id>
+    </mitre>
+
+    <group>
+      attack.persistence,
+      attack.t1136,
+      detection_engineering,
+    </group>
+  </rule>
+
+  <rule id="100102" level="12">
+    <if_sid>60154</if_sid>
+
+    <description>Detection Engineering Lab - User Added To Administrators Group</description>
+
+    <mitre>
+      <id>T1484</id>
+    </mitre>
+
+    <group>
+      attack.privilege_escalation,
+      detection_engineering,
+    </group>
+  </rule>
+
+</group>
